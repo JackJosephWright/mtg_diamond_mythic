@@ -1,81 +1,86 @@
-/* Reset some default browser styling */
-body, h1, h2, p, ul, li {
+/* Reset some default styling */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
-/* Apply font style to the entire body */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
     background-color: #f4f4f9;
-    padding: 0 20px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header styling */
 header {
-    background-color: #4a90e2;
+    background-color: #222;
     color: #fff;
+    padding: 2em;
     text-align: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-/* Main content styling */
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
+    margin-bottom: 2em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Section headings */
-section h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #4a90e2;
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the container */
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
 }
 
-/* Paragraph and list styling */
-section p {
-    font-size: 1.1em;
-    margin-bottom: 15px;
+
+section {
+    margin-bottom: 2em;
 }
 
-section ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
+h1, h2 {
+    font-weight: 700;
+    margin-bottom: 0.5em;
 }
 
-section ul li {
-    margin-bottom: 5px;
+h2 {
+    color: #0077cc;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 0.3em;
+    margin-top: 1em;
 }
 
-section ul li a {
-    color: #4a90e2;
+.small-img {
+    max-width: 50%; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: disc; /* Added disc for list styling */
+    padding-left: 20px; /* Added padding for indentation */
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: #0077cc;
     text-decoration: none;
 }
 
-section ul li a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Footer styling */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #4a90e2;
+    background-color: #222;
     color: #fff;
-    margin-top: 20px;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
 }
